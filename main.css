@@ -51,7 +51,7 @@ nav {
   z-index: 2;
 }
 
-nav #rad1,
+nav #nav-check,
 nav label {
   display: none
 }
@@ -81,7 +81,7 @@ nav .menu a:hover {
     display: inline-block;
   }
 
-  nav #rad1:checked~label p {
+  nav #nav-check:checked~label p {
     width: 0px;
     height: 0px;
     border-top: 0px solid transparent;
@@ -90,12 +90,12 @@ nav .menu a:hover {
     border-bottom: 10px solid var(--color);
   }
 
-  nav #rad1:checked+.menu,
-  nav #rad1:checked+.menu a {
+  nav #nav-check:checked+.menu,
+  nav #nav-check:checked+.menu a {
     display: grid;
   }
 
-  nav #rad1:checked+.menu {
+  nav #nav-check:checked+.menu {
     position: absolute;
     width: 100%;
     background-color: var(--highlight-color);
@@ -105,7 +105,7 @@ nav .menu a:hover {
     text-align: center;
   }
 
-  nav #rad1:checked+.menu a {
+  nav #nav-check:checked+.menu a {
     border-bottom: 1px black solid;
     padding: 10px;
   }
